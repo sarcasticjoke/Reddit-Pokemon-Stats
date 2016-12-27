@@ -55,11 +55,11 @@ def Pokeformat(name,rownum):
 wb = openpyxl.load_workbook('Pokemon.xlsx')
 sheet = wb.get_sheet_by_name('Sheet1')
 
-REDDIT_USERNAME = 'SagaTracker'  # YOUR USERNAME as string
-REDDIT_PASS = 'mudkip123'  # YOUR PASSWORD as string
+REDDIT_USERNAME = ''  # YOUR USERNAME as string
+REDDIT_PASS = ''  # YOUR PASSWORD as string
 r = praw.Reddit('Pokereply 0.1')
 r.login(REDDIT_USERNAME, REDDIT_PASS)
-subreddit = r.get_subreddit('345gbvwe5') #Name of subreddit for the bot to work in
+subreddit = r.get_subreddit('') #Name of subreddit for the bot to work in
 
 
 if not os.path.isfile("posts_saved.txt"):
