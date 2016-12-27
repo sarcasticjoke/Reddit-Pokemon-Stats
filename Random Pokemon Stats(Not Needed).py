@@ -1,3 +1,5 @@
+#This was the beginning of the reddit bot, it started as a little program which outputted a random pokemon along with their stats.
+
 import openpyxl
 import random
 
